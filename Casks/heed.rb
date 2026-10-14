@@ -1,5 +1,5 @@
-# The Homebrew cask, as scripts/bump-tap.sh writes it to heed-build/homebrew-tap on every release, with the version
-# and the zip's sha256 filled in. Change it here, not in the tap.
+# Written by heed's release workflow from packaging/homebrew/heed.rb in https://github.com/heed-build/heed;
+# change it there, not here.
 cask "heed" do
   version "0.1.0"
   sha256 "9285655d1c0c95d36e922f3867439fbf66a8267fa8ddcd8b4e057eebadddbd3f"
@@ -24,7 +24,9 @@ cask "heed" do
     "~/.config/heed",
     "~/Library/Application Support/Heed",
     "~/Library/Caches/Heed",
+    "~/Library/Preferences/build.heed.app.plist",
     "~/Library/Preferences/net.nullean.heed.plist",
+    "~/Library/Saved Application State/build.heed.app.savedState",
     "~/Library/Saved Application State/net.nullean.heed.savedState",
   ]
 end
