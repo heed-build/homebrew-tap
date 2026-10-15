@@ -1,8 +1,8 @@
 # Written by heed's release workflow from packaging/homebrew/heed.rb in https://github.com/heed-build/heed;
 # change it there, not here.
 cask "heed" do
-  version "0.6.0"
-  sha256 "fdc5300b33c764d14ed5253c1482577651616bb8c42037ca314fba859026da8a"
+  version "0.7.0"
+  sha256 "2ca9535af3eef26ada88da6a9e23f28409ed9087edee243cc238d0c72a41b073"
 
   url "https://github.com/heed-build/heed/releases/download/v#{version}/Heed-arm64.zip"
   name "Heed"
