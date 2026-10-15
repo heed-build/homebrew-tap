@@ -1,8 +1,8 @@
 # Written by heed's release workflow from packaging/homebrew/heed.rb in https://github.com/heed-build/heed;
 # change it there, not here.
 cask "heed" do
-  version "0.5.0"
-  sha256 "1a5547b3c4141f424e4a1f053df387f682a103a3e02f42bd41257672aec339c0"
+  version "0.6.0"
+  sha256 "fdc5300b33c764d14ed5253c1482577651616bb8c42037ca314fba859026da8a"
 
   url "https://github.com/heed-build/heed/releases/download/v#{version}/Heed-arm64.zip"
   name "Heed"
@@ -13,6 +13,9 @@ cask "heed" do
     url :url
     strategy :github_latest
   end
+
+  # Heed updates itself (Sparkle); brew upgrade leaves it to that (brew upgrade --greedy still upgrades it).
+  auto_updates true
 
   depends_on arch: :arm64
   depends_on macos: :sequoia
